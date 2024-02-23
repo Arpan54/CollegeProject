@@ -1,8 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import styled from'styled-components';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   return (
     <Container>
       <div className='logo'>
@@ -10,6 +19,23 @@ const Navbar = () => {
       </div>
       <ul>
         <li>Home</li>
+        <div className="club">
+          <li className="dropdown" onClick={toggleDropdown}>
+          Clubs
+          {isDropdownOpen && (
+            <ul className="dropdown-menu">
+              <li><Link to="/clubRule">Rules for Membership</Link></li>
+              {/* <li>Rules for Membership</li> */}
+              <li>TINT Art Club - AESTHETICA</li>
+              <li>TINT Literary Club - LITWITS</li>
+              <li>TINT Photography Club</li>
+              <li>TINT Film & Drama Club - TINT Talkies</li>
+              <li>TINT Music Club - HRIDMAJHARE</li>
+            </ul>
+          )}
+          </li>
+          <div className="downarrow" onClick={toggleDropdown}></div>
+        </div>
         <li>Dashboard</li>
         <li>Admin Portal</li>
         <li>Notice Board</li>
@@ -34,6 +60,20 @@ const Container = styled.nav`
   align-items: center;
   margin: auto;
 
+  .club{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    
+  }
+  .downarrow{
+    width: 8px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid black;
+  }
   .logo{
     align-items: center;
     img{
@@ -59,6 +99,23 @@ const Container = styled.nav`
       border-bottom: 2px solid black;
     }
   }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 51px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+  cursor: pointer;
+}
 `;
 
 export const Button = styled.button`
