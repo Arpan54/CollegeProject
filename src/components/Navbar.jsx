@@ -24,9 +24,9 @@ const Navbar = () => {
           Clubs
           {isDropdownOpen && (
             <ul className="dropdown-menu">
-              <li><Link to="/clubRule">Rules for Membership</Link></li>
-              {/* <li>Rules for Membership</li> */}
-              <li>TINT Art Club - AESTHETICA</li>
+              <li><Link to="/clubRule" className='noUnderLine'>Rules for Membership</Link></li>
+              <li><Link to="/ArtClub" className='noUnderLine'>TINT Art Club - AESTHETICA</Link></li>
+              {/* <li>TINT Art Club - AESTHETICA</li> */}
               <li>TINT Literary Club - LITWITS</li>
               <li>TINT Photography Club</li>
               <li>TINT Film & Drama Club - TINT Talkies</li>
@@ -111,7 +111,15 @@ const Container = styled.nav`
     flex-direction: column;
     width: max-content;
     z-index: 1;
-}
+
+    text-decoration: none;
+      color: black;
+
+    .noUnderLine{
+      text-decoration: none;
+      color: black;
+    }
+  }
 
 .dropdown-menu li {
   cursor: pointer;

@@ -5,10 +5,9 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
-import ClubRule from './components/ClubRule.jsx';
+import ClubRule from './components/DropDown/ClubRule.jsx';
+import ArtClub from './components/DropDown/ArtClub.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +17,15 @@ const router = createBrowserRouter([
   {
     path: "clubRule",
     element: <ClubRule/>,
-  }
+  },
+  {
+    path: "BackHome",
+    element: <App/>,
+  },
+  {
+    path: "ArtClub",
+    element: <ArtClub/>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
