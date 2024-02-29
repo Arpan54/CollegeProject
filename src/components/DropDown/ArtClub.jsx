@@ -94,6 +94,8 @@ const SecContainer = styled.div`
     font-size: 30px;
     text-align: center;
     color: #484848;
-    padding-top: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 5px solid black;
   }
 `;
