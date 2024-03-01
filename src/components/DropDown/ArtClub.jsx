@@ -54,6 +54,102 @@ const ArtClub = () => {
             <h3>Notices</h3>
           </div>
         </SecContainer>
+        <ThirdContainer>
+          <div className="first">
+            <h3>Rules and regulations of the Club:</h3>
+            <ol>
+              <li>
+                Membership will be offered only to those who have serious
+                interest in drawing and painting.
+              </li>
+              <li>
+                No Objection Certificate from the Head of the Department has to
+                be obtained.
+              </li>
+              <li>
+                The club membership of a student will lapse in the natural
+                course once and when his/her studentship in this college ends.
+              </li>
+              <li>
+                Members are expected to take part in different activities
+                organized by the club.
+              </li>
+              <li>
+                All drawings for display or for discussion must be done by the
+                member himself/herself.
+              </li>
+              <li>
+                Misuse of membership card is strictly prohibited and if so found
+                stringent step will be taken.
+              </li>
+              <li>
+                The authority reserves the sole right to cancel membership any
+                time without notice.
+              </li>
+              <li>
+                Addition and alteration of the rules and regulations may take
+                place at any point of time in future depending on the
+                requirement.
+              </li>
+            </ol>
+          </div>
+
+          <div className="line"></div>
+          <div className="second">
+            <h3>List of Faculty Members who are a part of the Club:</h3>
+            <ul>
+              <li>
+              Prof. Debaparna Sengupta, Assistant Professor (EE)
+              </li>
+              <li>
+              Prof. Nantu Das, Assistant Professor (EIE)
+              </li>
+              <li>
+              Prof. Sandip Bhattacharya, Assistant Professor    (ECE)
+              </li>
+              <li>
+              Prof. Averi Banerjee, Assistant Professor (BSH)
+              </li>
+              <li>
+              Prof. Ivy Das Choudhury, Assistant Professor (ME)
+              </li>
+              <li>
+              Prof.  Mousumi Kundu, Assistant Professor (CE)
+              </li>
+              <li>
+              Prof.(Dr.) Kashmi Mondal, Assistant Professor (BSH)
+              </li>
+              <li>
+              Prof. Ipshita Ghatak, Assistant Professor (BBA)
+              </li>
+              <li>
+              Prof. Soumajit Pal, Assistant Professor (MCA)
+              </li>
+              <li>
+              Prof. Sayantan Majumder, Assistant Professor (BSH)
+              </li>
+              <li>
+              Prof. Soumalya De, Assistant Professor (IT)
+              </li>
+            </ul>
+          </div>
+
+          <div className="line"></div>
+          <div className="second">
+            <h3>Faculty In-Charge of AESTHETICA - the Art Club:</h3>
+            <ul>
+              <li>
+              Prof. (Dr.) Papiya Debnath, Convenor, Assistant Professor, Department of Basic Science & Humanities.
+              </li>
+              <li>
+              Prof. Anindita Ray, Co-convenor, Assistant Professor, Department of Basic Science & Humanities.
+              </li>
+              <li>
+              Prof. Debraj Chatterjee, Co-convenor, Assistant Professor, Department of Computer Science.
+              </li>
+            </ul>
+          </div>
+        </ThirdContainer>
       </Container>
 
       <Footer>
@@ -73,25 +169,84 @@ const ArtClub = () => {
               </button>
             </form>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, labore! Repellendus doloremque impedit ullam distinctio nihil in eius cumque voluptatum beatae! Explicabo alias id maxime, unde voluptate nam architecto atque!</p>
+          <p>
+          AESTHETICA - the official Art Club of TINT, fosters a passion for visual arts, nurturing creativity and self-expression among students. Established on 27th September, 2019, it aims to cultivate talent and uphold artistic merits through various activities, competitions, seminars, and workshops.
+          </p>
         </div>
       </Footer>
+      <FooterLine>
+        <div className="copyRight">&copy;
+          <h4>2024 EMS. All rights reserved</h4>
+        </div>
+        <div className="lastRight">
+
+        </div>
+      </FooterLine>
     </>
   );
 };
 
 export default ArtClub;
+const ThirdContainer = styled.div`
+  display: flex;
+  margin: 25px 0px;
+  align-items: center;
 
+  border: 2px solid black;
+
+  h3{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* border-bottom: 2px solid black; */
+  }
+  .first{
+    width: 40%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    ol{
+      padding-left: 30px;
+    }
+  }
+  .second{
+    width: 30%;
+    padding-right: 10px;
+    ul{
+      padding-left: 30px;
+    }
+  }
+  .line{
+    width: 2px;
+    background-color: black;
+    height: 360px;
+  }
+`;
+const FooterLine = styled.div`
+  padding: 0px 150px 0px 180px;
+  width: 100%;
+  height: 60px;
+
+  background-color: black;
+  border-top: 2px solid white;
+
+  .copyRight{
+    display: flex;
+    gap: 5px;
+    color: white;
+    h4{
+      font-weight: 200;
+    }
+  }
+`
 const Footer = styled.div`
   position: relative;
   bottom: 0;
   background-color: black;
-  height: 400px;
+  height: 350px;
   width: 100%;
 
-  p{
+  p {
     color: white;
-    margin: 0pc 150px 0px 180px;
+    margin: 10px 150px 0px 180px;
     font-size: 12px;
     width: 285px;
     text-align: justify;
@@ -106,17 +261,17 @@ const Footer = styled.div`
         height: 40px;
         width: 200px;
         /* border-radius: 5px; */
-        border: 2px solid #6090D8;
+        border: 2px solid #6090d8;
 
         /* margin-right: 10px; */
       }
 
       button {
-        background-color: #6090D8;
+        background-color: #6090d8;
         color: white;
         padding: 7px 15px 9px 15px;
         /* border-radius: 5px; */
-        border: 2px solid #6090D8;
+        border: 2px solid #6090d8;
         cursor: pointer;
         font-weight: 600;
         font-size: 15px;
