@@ -27,7 +27,8 @@ const Navbar = () => {
               <li><Link to="/clubRule" className='noUnderLine'>Rules for Membership</Link></li>
               <li><Link to="/ArtClub" className='noUnderLine'>TINT Art Club - AESTHETICA</Link></li>
               {/* <li>TINT Art Club - AESTHETICA</li> */}
-              <li>TINT Literary Club - LITWITS</li>
+              <li><Link to="/LiteraryClub" className='noUnderLine'>TINT Literary Club - LITWITS</Link></li>
+              {/* <li>TINT Literary Club - LITWITS</li> */}
               <li>TINT Photography Club</li>
               <li>TINT Film & Drama Club - TINT Talkies</li>
               <li>TINT Music Club - HRIDMAJHARE</li>

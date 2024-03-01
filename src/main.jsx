@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import ClubRule from './components/DropDown/ClubRule.jsx';
 import ArtClub from './components/DropDown/ArtClub.jsx';
-
+import LiteraryClub from './components/DropDown/LiteraryClub.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "ArtClub",
     element: <ArtClub/>,
+  },
+  {
+    path: "LiteraryClub",
+    element: <LiteraryClub/>,
   },
 ]);
 

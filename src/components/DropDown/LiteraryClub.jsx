@@ -7,47 +7,18 @@ const ArtClub = () => {
     <>
       <NavDropDown />
       <Container>
-        <h1>TINT Art Club - AESTHETICA</h1>
+        <h1>TINT Literary Club - LITWITS</h1>
         <SecContainer>
           <div className="left">
             <h3>Current Events</h3>
           </div>
           <div className="mid">
             <p>
-              <span>AESTHETICA - the Art Club of TINT,</span> is the official
-              Art club of Techno International New Town, has been established
-              with an aim to inculcate among students a deep passion for visual
-              arts with an aesthetic touch. The club provides a platform for
-              students to develop their creativity and self-expression, and to
-              nurture a deep rooted understanding of concepts and ideas in art.
-              {/* <img src="./ArtClubLogo.png" alt="" /><br /> */}
-              It provides support and encouragement for those students who are
-              seeking a creative break in addition to their academic
-              schedule.ArtClubLogo The club was inaugurated on 27th September,
-              2019 on the auspicious occasion of Freshers’ Welcome 2019. It was
-              indeed a proud moment for the entire TINT family when the banner
-              of AESTHETICA was held high by club members and other eminent
-              dignitaries on the dais: Dr. R. T. Goswami, Director TINT, Dr.
-              Swarup Prasad Ghosh, Registrar, TINT, Dr. Mala Mitra, HOD, BSH,
-              TINT and Dr. Papiya Debnath, Convener, AESTHETICA, TINT. On this
-              auspicious occasion, Dr. R. T. Goswami in his address mentioned
-              that the Art Club of TINT proposes to capture the inherent talent
-              and potentiality of the student community and also to uphold the
-              artistic merits of the students who would in turn bring laurels to
-              the organization through their constant efforts.
+              <span>LITWITS, the Literary Club of TINT,</span> has been established with an aim to enhance the fine nuances of various facets of literary skills of the students. The club tends to inculcate among students a passion for ‘seeking beyond the pages’; thus providing wings to their imagination and creativity. The literary club provides a platform where students   can take a break from their brainstorming academic sessions and share their experiences, reading, thoughts and also showcase their talent and literary interests.
             </p>
+            <br />
             <p>
-              AESTHETICA would encourage students to express their thoughts,
-              feelings and creativity freely through drawing, sketching and
-              painting. It would further motivate students to actively
-              participate or be directly involved in art competitions. One of
-              the major activities of the club would be to establish art club
-              representatives to help manage and plan activities, and organize
-              group projects. The club would also organize seminar, competitions
-              and workshop for aesthetic enrichment of the students. At the same
-              time the club is also looking forward to organize enrichment
-              outing to a museum, art gallery, or figure drawing session in a
-              year.
+            The club is responsible for organizing various events in TINT, such as workshop, seminar, conferences, debate sessions, group discussions, book reading, competitions etc. The club was inaugurated on 27th September, 2019 on the auspicious occasion of Freshers’ Welcome 2019. It was indeed a proud moment for the entire TINT family when the banner of LITWITS was held high by club members and other eminent dignitaries on the dais: Dr. R T Goswami, Director TINT, Dr. Sarup Prasad Ghosh, Registrar, TINT, Dr. Mala Mitra, HOD, BSH, TINT. Dr. Goswami in his address mentioned that the club should work to develop and hone the literary skills of the students, thus inspiring them to develop a taste for literature and also works in the direction of expanding their academic horizon. All the students, faculty and staff members were highly motivated with such encouraging words.
             </p>
           </div>
           <div className="right">
@@ -59,8 +30,7 @@ const ArtClub = () => {
             <h3>Rules and regulations of the Club:</h3>
             <ol>
               <li>
-                Membership will be offered only to those who have serious
-                interest in drawing and painting.
+              Membership will be offered only to those who have serious interest in literary activities.
               </li>
               <li>
                 No Objection Certificate from the Head of the Department has to
@@ -70,6 +40,7 @@ const ArtClub = () => {
                 The club membership of a student will lapse in the natural
                 course once and when his/her studentship in this college ends.
               </li>
+              <li>Members must attend meetings regularly.</li>
               <li>
                 Members are expected to take part in different activities
                 organized by the club.
@@ -85,11 +56,6 @@ const ArtClub = () => {
               <li>
                 The authority reserves the sole right to cancel membership any
                 time without notice.
-              </li>
-              <li>
-                Addition and alteration of the rules and regulations may take
-                place at any point of time in future depending on the
-                requirement.
               </li>
             </ol>
           </div>
@@ -136,7 +102,7 @@ const ArtClub = () => {
 
           <div className="line"></div>
           <div className="second">
-            <h3>Faculty In-Charge of AESTHETICA - the Art Club:</h3>
+            <h3>Faculty In-Charge of LITWITS - the Literary Club:</h3>
             <ul>
               <li>
               Prof. (Dr.) Papiya Debnath, Convenor, Assistant Professor, Department of Basic Science & Humanities.
@@ -155,10 +121,10 @@ const ArtClub = () => {
       <Footer>
         <div className="left">
           <div className="leftLogo">
-            <img src="../ArtClubLogo.png" alt="" />
+            <img src="../LiterarcyClub.jpg" alt="" />
             <div className="text">
-              <h4>AESTHETICA</h4>
-              <h5>The TINT Art Club</h5>
+              <h4>LITWITS</h4>
+              <h5>The TINT Literary Club</h5>
             </div>
           </div>
           <div className="searchBar">
@@ -230,7 +196,7 @@ const FooterLine = styled.div`
   height: 60px;
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #2b2b2b;
   border-top: 2px solid white;
 
   .copyRight{
@@ -260,7 +226,7 @@ const FooterLine = styled.div`
 const Footer = styled.div`
   position: relative;
   bottom: 0;
-  background-color: black;
+  background-color: #2b2b2b;
   height: 350px;
   width: 100%;
 
@@ -309,6 +275,12 @@ const Footer = styled.div`
     display: flex;
     align-items: center;
 
+    img{
+        width: 80%;
+        height: auto;
+        
+        margin-right: 14px;
+    }
     h4 {
       color: white;
       font-size: 25px;
@@ -316,6 +288,7 @@ const Footer = styled.div`
     h5 {
       color: white;
       font-size: 15px;
+      width: 170px;
     }
   }
 `;
