@@ -29,7 +29,7 @@ const Navbar = () => {
               {/* <li>TINT Art Club - AESTHETICA</li> */}
               <li><Link to="/LiteraryClub" className='noUnderLine'>TINT Literary Club - LITWITS</Link></li>
               {/* <li>TINT Literary Club - LITWITS</li> */}
-              <li>TINT Photography Club</li>
+              <li><Link to="/PhotoClub" className='noUnderLine'>TINT Photography Club</Link></li>
               <li>TINT Film & Drama Club - TINT Talkies</li>
               <li>TINT Music Club - HRIDMAJHARE</li>
             </ul>

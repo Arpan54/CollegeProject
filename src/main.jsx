@@ -9,6 +9,7 @@ import {
 import ClubRule from './components/DropDown/ClubRule.jsx';
 import ArtClub from './components/DropDown/ArtClub.jsx';
 import LiteraryClub from './components/DropDown/LiteraryClub.jsx';
+import PhotoClub from './components/DropDown/PhotoClub.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "LiteraryClub",
     element: <LiteraryClub/>,
+  },
+  {
+    path: "PhotoClub",
+    element: <PhotoClub/>,
   },
 ]);
 
