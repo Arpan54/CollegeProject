@@ -51,8 +51,8 @@ const Hridmajhare = () => {
             </ol>
           </div>
 
-          <div className="line"></div>
-          <div className="second">
+          {/* <div className="line"></div> */}
+          {/* <div className="second">
             <h3>List of Faculty Members who are a part of the Club:</h3>
             <ul>
               <li>
@@ -89,7 +89,7 @@ const Hridmajhare = () => {
               Lorem ipsum dolor sit amet.
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="line"></div>
           <div className="second">
@@ -159,17 +159,19 @@ const ThirdContainer = styled.div`
     /* border-bottom: 2px solid black; */
   }
   .first{
-    width: 40%;
+    width: 55%;
     padding-right: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     /* background-color: #dfd0d0; */
     ol{
       padding-left: 30px;
     }
   }
   .second{
-    width: 30%;
+    width: 45%;
     padding-right: 10px;
+    padding-left: 10px;
     /* background-color: #dfd0d0; */
     ul{
       padding-left: 30px;
@@ -225,7 +227,7 @@ const Footer = styled.div`
     color: white;
     margin: 10px 150px 0px 180px;
     font-size: 12px;
-    width: 285px;
+    width: 360px;
     text-align: justify;
   }
   .searchBar {
@@ -236,7 +238,7 @@ const Footer = styled.div`
       align-items: center;
       input {
         height: 40px;
-        width: 200px;
+        width: 255px;
         /* border-radius: 5px; */
         border: 2px solid #6090d8;
 
@@ -262,7 +264,7 @@ const Footer = styled.div`
   .leftLogo {
     width: 120px;
     height: 120px;
-    margin: 0pc 150px 0px 150px;
+    margin: 0pc 150px 0px 180px;
     display: flex;
     align-items: center;
 
@@ -291,6 +293,7 @@ const Container = styled.div`
     text-align: center;
     font-size: 55px;
     font-weight: 600;
+    padding-bottom: 15px;
   }
 `;
 
@@ -301,7 +304,7 @@ const SecContainer = styled.div`
 
   .left {
     width: 25%;
-    height: 460px;
+    height: 350px;
     /* background-color: #b1b1b1; */
 
     border: 5px dashed black;
@@ -318,7 +321,7 @@ const SecContainer = styled.div`
   }
   .right {
     width: 25%;
-    height: 460px;
+    height: 350px;
     /* background-color: #b1b1b1; */
 
     border: 5px dashed black;

@@ -182,7 +182,7 @@ const ThirdContainer = styled.div`
   .line{
     width: 2px;
     background-color: black;
-    height: 360px;
+    height: 485px;
   }
 `;
 const FooterLine = styled.div`
@@ -229,7 +229,7 @@ const Footer = styled.div`
     color: white;
     margin: 10px 150px 0px 180px;
     font-size: 12px;
-    width: 285px;
+    width: 450px;
     text-align: justify;
   }
   .searchBar {
@@ -240,7 +240,7 @@ const Footer = styled.div`
       align-items: center;
       input {
         height: 40px;
-        width: 200px;
+        width: 255px;
         /* border-radius: 5px; */
         border: 2px solid #6090d8;
 
@@ -266,7 +266,7 @@ const Footer = styled.div`
   .leftLogo {
     width: 120px;
     height: 120px;
-    margin: 0pc 150px 0px 150px;
+    margin: 0pc 150px 0px 180px;
     display: flex;
     align-items: center;
 
@@ -295,6 +295,7 @@ const Container = styled.div`
     text-align: center;
     font-size: 55px;
     font-weight: 600;
+    padding-bottom: 15px;
   }
 `;
 
@@ -305,7 +306,7 @@ const SecContainer = styled.div`
 
   .left {
     width: 25%;
-    height: 460px;
+    height: 360px;
     /* background-color: #b1b1b1; */
 
     border: 5px dashed black;
@@ -322,7 +323,7 @@ const SecContainer = styled.div`
   }
   .right {
     width: 25%;
-    height: 460px;
+    height: 360px;
     /* background-color: #b1b1b1; */
 
     border: 5px dashed black;

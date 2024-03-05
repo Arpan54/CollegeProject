@@ -234,7 +234,7 @@ const Footer = styled.div`
     color: white;
     margin: 10px 150px 0px 180px;
     font-size: 12px;
-    width: 285px;
+    width: 340px;
     text-align: justify;
   }
   .searchBar {
@@ -245,7 +245,7 @@ const Footer = styled.div`
       align-items: center;
       input {
         height: 40px;
-        width: 200px;
+        width: 255px;
         /* border-radius: 5px; */
         border: 2px solid #6090d8;
 
@@ -271,7 +271,7 @@ const Footer = styled.div`
   .leftLogo {
     width: 120px;
     height: 120px;
-    margin: 0pc 150px 0px 150px;
+    margin: 0pc 150px 0px 180px;
     display: flex;
     align-items: center;
 
@@ -300,6 +300,7 @@ const Container = styled.div`
     text-align: center;
     font-size: 55px;
     font-weight: 600;
+    padding-bottom: 15px;
   }
 `;
 

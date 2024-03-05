@@ -327,6 +327,7 @@ const Container = styled.div`
     text-align: center;
     font-size: 55px;
     font-weight: 600;
+    padding-bottom: 15px;
   }
 `;
 
