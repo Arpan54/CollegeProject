@@ -30,8 +30,8 @@ const Navbar = () => {
               <li><Link to="/LiteraryClub" className='noUnderLine'>TINT Literary Club - LITWITS</Link></li>
               {/* <li>TINT Literary Club - LITWITS</li> */}
               <li><Link to="/PhotoClub" className='noUnderLine'>TINT Photography Club</Link></li>
-              <li>TINT Film & Drama Club - TINT Talkies</li>
-              <li>TINT Music Club - HRIDMAJHARE</li>
+              <li><Link to="/Talkies" className='noUnderLine'>TINT Film & Drama Club - TINT Talkies</Link></li>
+              <li><Link to="/Hridmajhare" className='noUnderLine'>TINT Music Club - HRIDMAJHARE</Link></li>
             </ul>
           )}
           </li>
