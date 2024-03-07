@@ -39,7 +39,8 @@ const Navbar = () => {
         <li>Admin Portal</li>
         <li>Notice Board</li>
       </ul>
-      <Button>Student Login</Button>
+      <Link to="/studentReg"><Button>Student Login</Button></Link>
+      {/* <Button onClick={StudentLogin.jsx}>Student Login</Button> */}
         {/* <div className='bar'></div> */}
       
     </Container>

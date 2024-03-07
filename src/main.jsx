@@ -12,6 +12,8 @@ import LiteraryClub from './components/DropDown/LiteraryClub.jsx';
 import PhotoClub from './components/DropDown/PhotoClub.jsx';
 import Talkies from './components/DropDown/Talkies.jsx';
 import Hridmajhare from './components/DropDown/Hridmajhare.jsx';
+import StudentReg from './components/LogReg/StudentReg.jsx';
+import StudentLogin from './components/LogReg/StudentLogin.jsx';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
   {
     path: "Hridmajhare",
     element: <Hridmajhare/>,
+  },
+  {
+    path: "studentReg",
+    element: <StudentReg/>
+  },
+  {
+    path:"studentLogin",
+    element: <StudentLogin/>
   },
 ]);
 
